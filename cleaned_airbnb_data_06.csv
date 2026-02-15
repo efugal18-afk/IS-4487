@@ -919,9 +919,9 @@
           "height": 594
         },
         "id": "5sNalbIrBaMn",
-        "outputId": "96441b29-ef45-4eb6-c787-b8e021dbf18d"
+        "outputId": "0e6e1817-f8c6-47c4-dc65-7d949f3d3253"
       },
-      "execution_count": 15,
+      "execution_count": 18,
       "outputs": [
         {
           "output_type": "stream",
@@ -1063,13 +1063,14 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 17,
       "metadata": {
         "id": "SYjYwyYonTi9"
       },
       "outputs": [],
       "source": [
-        "# export csv here 🔧"
+        "# export csv here 🔧\n",
+        "df.to_csv(\"cleaned_airbnb_data_6.csv\", index=False)\n"
       ]
     },
     {
