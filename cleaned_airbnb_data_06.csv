@@ -68,7 +68,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": 20,
       "metadata": {
         "id": "j1o2VjQNRLI1"
       },
@@ -83,13 +83,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 5,
+      "execution_count": 21,
       "metadata": {
         "id": "05dzhQHzR0vt",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "850ea094-f033-4d09-c232-81437caf276a"
+        "outputId": "b6ad44b9-5871-44e7-de1b-10c4ad7dcd05"
       },
       "outputs": [
         {
@@ -282,7 +282,7 @@
           "height": 1000
         },
         "id": "6fd24919",
-        "outputId": "206245c9-2dfa-47a9-93d0-82cd61f84f64"
+        "outputId": "a57e30d1-a10e-4a95-ca37-ca1329597925"
       },
       "source": [
         "null_counts = df.isnull().sum()\n",
@@ -290,7 +290,7 @@
         "display(null_counts_filtered)\n",
         "pd.set_option('display.max_rows', None)"
       ],
-      "execution_count": 27,
+      "execution_count": 22,
       "outputs": [
         {
           "output_type": "display_data",
@@ -488,7 +488,7 @@
           "height": 551
         },
         "id": "c932aac4",
-        "outputId": "8f8e8236-db30-4fd4-e475-5d1547bc149d"
+        "outputId": "60f728bf-cd64-47bc-fb6b-1fd867b05c6e"
       },
       "source": [
         "null_counts_filtered = null_counts[null_counts > 0]\n",
@@ -501,13 +501,13 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "execution_count": 14,
+      "execution_count": 23,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stderr",
           "text": [
-            "/tmp/ipython-input-737685143.py:5: FutureWarning: \n",
+            "/tmp/ipython-input-3503981448.py:3: FutureWarning: \n",
             "\n",
             "Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.\n",
             "\n",
@@ -569,14 +569,14 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 36,
+      "execution_count": 24,
       "metadata": {
         "id": "GvQDqSfPSD-3",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 1000
         },
-        "outputId": "ff065697-7192-4840-a54e-e71eeb32f6af"
+        "outputId": "cfceedef-eb6e-4ba9-b5da-13b3b661ec71"
       },
       "outputs": [
         {
@@ -725,13 +725,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 6,
+      "execution_count": 25,
       "metadata": {
         "id": "AfoW3qQeSJuB",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "daee8f8b-d7bf-42c1-f2e1-da675bb44f78"
+        "outputId": "174ba489-0f2a-43db-a1a7-6d0b34757069"
       },
       "outputs": [
         {
@@ -746,14 +746,14 @@
           "output_type": "stream",
           "name": "stderr",
           "text": [
-            "/tmp/ipython-input-1391795105.py:5: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\n",
+            "/tmp/ipython-input-3993773816.py:5: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\n",
             "The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n",
             "\n",
             "For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n",
             "\n",
             "\n",
             "  df['price'].fillna(median_price, inplace=True)\n",
-            "/tmp/ipython-input-1391795105.py:6: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\n",
+            "/tmp/ipython-input-3993773816.py:6: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.\n",
             "The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.\n",
             "\n",
             "For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.\n",
@@ -830,7 +830,7 @@
           "height": 196
         },
         "id": "33ae20f5",
-        "outputId": "db806d41-acc2-492b-d8bf-1cd82cd9fa80"
+        "outputId": "b7478b6a-eb8f-4e4e-a030-51891e31e0f0"
       },
       "source": [
         "# Convert 'room_type' to a binary variable\n",
@@ -840,7 +840,7 @@
         "print(\"Value counts for the new 'entire_home' column:\")\n",
         "display(df['entire_home'].value_counts())"
       ],
-      "execution_count": 9,
+      "execution_count": 26,
       "outputs": [
         {
           "output_type": "stream",
@@ -919,9 +919,9 @@
           "height": 594
         },
         "id": "5sNalbIrBaMn",
-        "outputId": "0e6e1817-f8c6-47c4-dc65-7d949f3d3253"
+        "outputId": "a439ed96-7faa-4ab9-f533-50fa8e0251c1"
       },
-      "execution_count": 18,
+      "execution_count": 27,
       "outputs": [
         {
           "output_type": "stream",
@@ -1000,9 +1000,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "L4UQColaA8Wv",
-        "outputId": "60af39c8-b4d3-4db3-bfb5-bcabd7bc0298"
+        "outputId": "da1adf12-72a2-4903-88d4-3fcedb007342"
       },
-      "execution_count": 14,
+      "execution_count": 28,
       "outputs": [
         {
           "output_type": "stream",
@@ -1063,7 +1063,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 17,
+      "execution_count": 19,
       "metadata": {
         "id": "SYjYwyYonTi9"
       },
